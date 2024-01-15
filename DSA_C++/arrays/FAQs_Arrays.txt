@@ -1,0 +1,10 @@
+Frequently asked questions about arrays.
+
+1. What is an array in data structure with example?
+   Arrays are a collection of data stored at contgigous memory locations,
+   of same data type.
+example: 
+       An character array of vowels in english alphabets can be represented as,
+       char vowels[10] = {'a','e','i','o','u','A','E','I','O','U'}
+
+2.
