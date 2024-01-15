@@ -1,0 +1,36 @@
+From: geeksforgeeks
+      
+ Top theoretical interview questions on arrays.
+
+Link: https://www.geeksforgeeks.org/introduction-to-arrays-data-structure-and-algorithm-tutorials/
+At the end of this web page.
+
+1. What happens Array is not initialized?
+ans:
+there are two methods to initialize(i.e. to give values ) an array:
+ i.  while declaring the array.
+
+ example: 
+        step: declare and initialize array at one time.
+        int arr[10] ={1,2,3,4,5,6,7,8,9,10}
+ ii. any time after declaring the array.
+
+        step1: declare array
+        int arr[10];
+
+        step2: initialize array
+        for(int i=0;i<10;i++){
+            arr[i] += 1;
+        }
+
+**Why is there a need to initialize an Array?
+-If the array is not initialized at the time of declaration or any time after that then it will contain some random values in each memory position. 
+-These random values can be of two types: 
+1. Default values: 
+   If the array elements are of object types then the default value is null.  
+    example: 
+            int arr[10] ={ };  
+
+2. Garbage values:
+   example:
+            int arr[10];
