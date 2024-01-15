@@ -1,3 +1,8 @@
+From: geeksforgeeks
+
+Link: https://www.geeksforgeeks.org/introduction-to-arrays-data-structure-and-algorithm-tutorials/
+At the end of the webpage
+
 Frequently asked questions about arrays.
 
 1. What is an array in data structure with example?
@@ -7,4 +12,74 @@ example:
        An character array of vowels in english alphabets can be represented as,
        char vowels[10] = {'a','e','i','o','u','A','E','I','O','U'}
 
-2.
+2. What data structure is an array?
+   Array is a liner data structure.
+   It is known as Homogenous data structures.
+   they stores stroes data of similar elements in contiguous memory locations.
+
+3. Types of arrays.
+ i.  1-D arrays
+ ii. 2-D arrays
+
+5. How is data stored in an array?
+An array is a collection of items of the same data type stored at contiguous memory locations or 
+says the elements are stored one after another in memory. 
+An array uses an index system starting at 0 and going to (n-1), where n is its size.
+
+6. Difference between array and structure?
+The structure can contain variables of different types but an array only contains variables of the same type. 
+
+7. Applications of arrays.
+- used in implementing other data structures like linked list, stacks, queues, graphs, trees etc.
+- database records are usually stored as arrays.
+- it is used for differnet sorting algorithms.
+
+8. What are the types of operations to perform on arrays.
+
+- Traversal
+- Insertion
+- Deletion
+- Searching
+- Sorting
+
+9. Advantages of using arrays.
+
+- Allow random access to elelments, as they are stored at contigous memory locations.
+- used in implementing other data structures like linked list, stacks, queues, graphs, trees etc.
+
+10. Disadvantages of arrays.
+- Arrays have fixed size, once memory is allocated it can not be increased or decreased.
+- An array is homogenous in nature so, a single array can not store values of different data types.
+- as array store data at contigous memory location, it's difficult to insert and delete elments form array .
+
+NOTE:
+1. While declaring an array, it's size must be an integer constant greater than 0.
+2. In an array we can not leave the size of array empty while declaring, if  it's not a dynamic array
+   (i.e. the size must be determined at the compile-time.)
+   This is because the compler needs this information to allocate the appropriate amount of memory for the array and to generate correct code for accessing elements.
+
+   If you leave the size blank, the compiler doesn't know how much space to reserve, and it won't able to generate the neccessary machine code
+   to handle array indexing and other operations, and may be the ammount of data is larger or smaller than the amount of memory the compiler give the array.
+
+   example: 
+   This code can be invalid.
+       int arr[]; 
+   
+If you want to create an array whose size is determined at run-time then, you would use dynamic memory allocation with pointers.
+as: 
+   int * arr = new int[10];
+   .....
+   ..... other expresions
+   .....
+   delete[] arr;
+
+3. Array each block size based on 32-bit computer & 64-bit computer.
+   
+   data type    32-bit (in bytes)   64-bit (in bytes)
+   
+   pointer      4                   8
+   int          4                   4
+   float        4                   4
+   char         1                   1
+   double       8                   8
+   long         16                  16
